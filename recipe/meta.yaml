@@ -28,6 +28,7 @@ requirements:
     - requests
     - argparse  # [py26]
     - orderedict  # [py26]
+    - cachetools
 
 test:
   imports:
