@@ -26,6 +26,7 @@ requirements:
     - cssselect
     - cssutils
     - requests
+    - cachetools
     - argparse  # [py26]
     - orderedict  # [py26]
 
