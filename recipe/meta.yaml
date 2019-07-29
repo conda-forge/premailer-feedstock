@@ -1,6 +1,6 @@
 {% set name = "premailer" %}
-{% set version = "3.1.1" %}
-{% set sha256 = "fd07dadc47345f7d44a0587bd65a37c45886f19c44b3ec94904761e4b2d39124" %}
+{% set version = "3.5.0" %}
+{% set sha256 = "73a5ef7791a22b59bf4843412b39488e912d38de9b38377c8f6c8e0f64a8f7d8" %}
 
 package:
   name: {{ name }}
@@ -13,21 +13,22 @@ source:
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
+    - pip
     - setuptools
-
+    
   run:
     - python
     - lxml
     - cssselect
     - cssutils
     - requests
-    - argparse  # [py26]
-    - orderedict  # [py26]
+    - cachetools
 
 test:
   imports:
@@ -36,6 +37,7 @@ test:
 about:
   home: http://github.com/peterbe/premailer
   license: BSD3
+  license_file: LICENSE
   summary: Turns CSS blocks into style attributes
 
 extra:
