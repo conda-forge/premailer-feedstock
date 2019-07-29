@@ -31,8 +31,6 @@ requirements:
     - cssutils
     - requests
     - cachetools
-    - argparse  # [py26]
-    - orderedict  # [py26]
 
 test:
   imports:
