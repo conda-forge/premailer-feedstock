@@ -1,6 +1,6 @@
 {% set name = "premailer" %}
-{% set version = "3.6.0" %}
-{% set sha256 = "093265a79ebb32d8f5b5486019b3d5e4ddb41c85eff7c6cc81cc835091b6b4ae" %}
+{% set version = "3.6.1" %}
+{% set sha256 = "fcc1062329ba37668f95b2bf95e78d730eebf7851d742028251384a04e87fa22" %}
 
 package:
   name: {{ name }}
