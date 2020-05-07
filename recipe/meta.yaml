@@ -1,6 +1,6 @@
 {% set name = "premailer" %}
-{% set version = "3.6.1" %}
-{% set sha256 = "fcc1062329ba37668f95b2bf95e78d730eebf7851d742028251384a04e87fa22" %}
+{% set version = "3.6.2" %}
+{% set sha256 = "8240bfb8ff94db3ae581d8434b7eea5005872d5779394ed8f4223dfb0f58afd2" %}
 
 package:
   name: {{ name }}
@@ -14,14 +14,14 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - python
     - pip
     - setuptools
-    
+
   run:
     - python
     - lxml
