@@ -1,6 +1,6 @@
 {% set name = "premailer" %}
-{% set version = "3.7.0" %}
-{% set sha256 = "5eec9603e84cee583a390de69c75192e50d76e38ef0292b027bd64923766aca7" %}
+{% set version = "3.9.0" %}
+{% set sha256 = "da18b9e8cb908893b67ab9b7451276fef7c0ab179f40189378545f6bb0ab3695" %}
 
 package:
   name: {{ name }}
@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
 
   run:
-    - python
+    - python >=3.6
     - lxml
     - cssselect
     - cssutils
@@ -36,7 +36,7 @@ test:
 
 about:
   home: http://github.com/peterbe/premailer
-  license: BSD3
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: Turns CSS blocks into style attributes
 
