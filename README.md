@@ -3,7 +3,7 @@ About premailer
 
 Home: http://github.com/peterbe/premailer
 
-Package license: BSD3
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/premailer-feedstock/blob/master/LICENSE.txt)
 
